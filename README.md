@@ -1,4 +1,5 @@
-usage: parse_packet.py [-h] [--filter FILTER] pcap
+处理wireshark tcpdump 数据包：
+usage: handle_packet.py [-h] [--filter FILTER] pcap
 
 positional arguments:
   pcap             a pcap file from wireshark or tcpdump
