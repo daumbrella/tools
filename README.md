@@ -1,10 +1,9 @@
-处理wireshark tcpdump 数据包：
+常用工具脚本：
 
-usage: handle_packet.py [-h] [--filter FILTER] pcap
+1. 处理wireshark tcpdump数据包：
 
-positional arguments:
-  pcap             a pcap file from wireshark or tcpdump
+pcap_utils.py
 
-optional arguments:
-  -h, --help       show this help message and exit
-  --filter FILTER  a rule to filter packets such as 'udp'
+2. aes加解密，包括文本和二进制两种:
+
+aes_utils.py
