@@ -51,7 +51,7 @@ def traverse_pcap(pcap,filter_rules):
         print (packet.data.data)
 
 		
-def main():
+'''def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("pcap",help="a pcap file from wireshark or tcpdump")
     parser.add_argument("--filter",default=None,help="a rule to filter packets such as 'udp'")
@@ -60,4 +60,4 @@ def main():
     traverse_pcap(args.pcap,args.filter)
 
 if __name__ == "__main__":
-    main()
+    main()'''
