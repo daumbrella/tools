@@ -43,14 +43,15 @@ def get_packets(pcapfile,filter_rules=None):
         cap = pyshark.FileCapture(pcapfile)
     return cap
 
-def traverse_pcap(pcap,filter_rules):
-    cap=get_packets(pcap,filter_rules=filter_rules)
+#传入pcapfile 和 过滤规则filter rules
+def traverse_pcap(pcapfile,filter_rules):
+    cap=get_packets(pcapfile,filter_rules=filter_rules)
     for packet in cap:
         if "data" not in packet:
             continue
         print (packet.data.data)
 
-		
+#命令行传参	
 '''def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("pcap",help="a pcap file from wireshark or tcpdump")
